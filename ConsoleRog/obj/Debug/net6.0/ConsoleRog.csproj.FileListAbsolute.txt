@@ -1,0 +1,15 @@
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\bin\Debug\net6.0\ConsoleRog.exe
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\bin\Debug\net6.0\ConsoleRog.deps.json
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\bin\Debug\net6.0\ConsoleRog.runtimeconfig.json
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\bin\Debug\net6.0\ConsoleRog.dll
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\bin\Debug\net6.0\ConsoleRog.pdb
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.csproj.AssemblyReference.cache
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.AssemblyInfoInputs.cache
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.AssemblyInfo.cs
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.csproj.CoreCompileInputs.cache
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.dll
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\refint\ConsoleRog.dll
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.pdb
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.genruntimeconfig.cache
+C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ref\ConsoleRog.dll
