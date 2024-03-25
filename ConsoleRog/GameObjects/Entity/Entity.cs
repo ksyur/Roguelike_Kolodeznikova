@@ -23,6 +23,7 @@ namespace ConsoleRog.GameObjects.Entity
                 }
             }
         }
+
         public Entity(string symbol, Vector2 position, int hp, bool isSolid = true) : base(symbol, position, isSolid)
         {
 
@@ -33,6 +34,5 @@ namespace ConsoleRog.GameObjects.Entity
         {
             base.DrawMyself(_symbol, position);
         }
-
     }
 }

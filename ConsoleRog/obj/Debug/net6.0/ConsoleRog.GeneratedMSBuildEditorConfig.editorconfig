@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ConsoleRog
-build_property.ProjectDir = C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\
+build_property.ProjectDir = C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

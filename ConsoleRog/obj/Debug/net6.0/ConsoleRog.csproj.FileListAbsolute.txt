@@ -13,3 +13,18 @@ C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\refi
 C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.pdb
 C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ConsoleRog.genruntimeconfig.cache
 C:\Users\AdMin\OneDrive\1 семестр\ООП\ConsoleRog\obj\Debug\net6.0\ref\ConsoleRog.dll
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\bin\Debug\net6.0\ConsoleRog.exe
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\bin\Debug\net6.0\ConsoleRog.deps.json
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\bin\Debug\net6.0\ConsoleRog.runtimeconfig.json
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\bin\Debug\net6.0\ConsoleRog.dll
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\bin\Debug\net6.0\ConsoleRog.pdb
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.AssemblyInfoInputs.cache
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.AssemblyInfo.cs
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.csproj.CoreCompileInputs.cache
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.sourcelink.json
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.dll
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\refint\ConsoleRog.dll
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.pdb
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ConsoleRog.genruntimeconfig.cache
+C:\Users\Чин-Соён\Documents\GitHub\Roguelike_Kolodeznikova\ConsoleRog\obj\Debug\net6.0\ref\ConsoleRog.dll

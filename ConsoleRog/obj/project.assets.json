@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\AdMin\\.nuget\\packages\\": {},
+    "C:\\Users\\Чин-Соён\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AdMin\\OneDrive\\1 семестр\\ООП\\ConsoleRog\\ConsoleRog.csproj",
+      "projectUniqueName": "C:\\Users\\Чин-Соён\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\ConsoleRog.csproj",
       "projectName": "ConsoleRog",
-      "projectPath": "C:\\Users\\AdMin\\OneDrive\\1 семестр\\ООП\\ConsoleRog\\ConsoleRog.csproj",
-      "packagesPath": "C:\\Users\\AdMin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AdMin\\OneDrive\\1 семестр\\ООП\\ConsoleRog\\obj\\",
+      "projectPath": "C:\\Users\\Чин-Соён\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\ConsoleRog.csproj",
+      "packagesPath": "C:\\Users\\Чин-Соён\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Чин-Соён\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\AdMin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Чин-Соён\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -46,6 +46,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -62,12 +67,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

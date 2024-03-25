@@ -15,24 +15,24 @@ namespace ConsoleRog.GameObjects.Entity
     public class Enemy : Entity
     {
         private Random random = Random.Shared;
-        private readonly GameObject[,] mapObjects;
+        private readonly MapObject[,] mapObjects;
         private readonly int mapHeight, mapWidth;
-        private readonly Vector2 finish;
-        public Enemy(string symbol, Vector2 position, int hp, GameObject[,] mapObjects, int mapHeight, int mapWidth, Vector2 finish, bool isSolid = true) 
+        public Enemy(string symbol, Vector2 position, int hp, MapObject[,] mapObjects, int mapHeight, int mapWidth, bool isSolid = true) 
             : base(symbol, position, hp, isSolid)
         {
             this.mapObjects = mapObjects;
             this.mapHeight = mapHeight;
             this.mapWidth = mapWidth;
-            this.finish = finish;
             DrawMyself(symbol, position);
         }
+
         public void Update(Vector2 playerPosition)
         {
-            DrawMyself(" ", position);
+            DrawMyself(mapObjects[position.X, position.Y].symbol, position);
             Move(playerPosition);
             DrawMyself(symbol, position);
         }
+
         private void Move(Vector2 playerPosition)
         {
             bool isVisible = IsPlayerVisible(playerPosition);
@@ -48,6 +48,7 @@ namespace ConsoleRog.GameObjects.Entity
                 position = nextPosition;
             }
         }
+
         private Vector2[] GetFreePositions(Vector2 _position)
         {
             List<Vector2> freePositions = new List<Vector2>();
@@ -56,7 +57,7 @@ namespace ConsoleRog.GameObjects.Entity
                 Vector2 newPosition = new Vector2((_position + Vector2.Directions[i]).X, (_position + Vector2.Directions[i]).Y);
                 if (newPosition.X < mapWidth - 1 && newPosition.X > 0 && newPosition.Y < mapHeight - 1 && newPosition.Y > 0)
                 {
-                    if (mapObjects[newPosition.X, newPosition.Y].isSolid == false && newPosition.X != finish.X && newPosition.Y != finish.Y)
+                    if (mapObjects[newPosition.X, newPosition.Y].isSolid == false)
                     {
                         freePositions.Add(newPosition);
                     }
@@ -64,6 +65,7 @@ namespace ConsoleRog.GameObjects.Entity
             }
             return freePositions.ToArray();
         }
+
         private void MoveToPlayer(Vector2 playerPosition)
         {
             int deltaX = Math.Sign(playerPosition.X - position.X);
@@ -71,6 +73,7 @@ namespace ConsoleRog.GameObjects.Entity
             Vector2 nextPosition = new Vector2(position.X + deltaX, position.Y + deltaY);
             position = nextPosition;
         }
+
         private bool IsPlayerVisible(Vector2 playerPosition)
         {
             bool isVisible = true;

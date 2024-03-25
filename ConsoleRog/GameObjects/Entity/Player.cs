@@ -10,17 +10,18 @@ namespace ConsoleRog.GameObjects.Entity
 {
     public class Player: Entity
     {
-        private readonly MapObject[,] map;
+        private readonly MapObject[,] mapObjects;
         private readonly Vector2 finish;
-        public Player(string symbol, Vector2 position, MapObject[,] map, Vector2 finish, int hp = 100, bool isSolid = true) : base(symbol, position, hp, isSolid)
+        public Player(string symbol, Vector2 position, MapObject[,] mapObjects, Vector2 finish, int hp = 100, bool isSolid = true) : base(symbol, position, hp, isSolid)
         {
-            this.map = map;
+            this.mapObjects = mapObjects;
             this.finish= finish;
             DrawMyself(symbol, position);
         }
+
         public void Update(Vector2 _newPosition)
         {
-            DrawMyself(" ", position);
+            DrawMyself(mapObjects[position.X, position.Y].symbol, position);
             position = _newPosition;
             DrawMyself(symbol, position);
         }
@@ -47,7 +48,7 @@ namespace ConsoleRog.GameObjects.Entity
                     return;
             }
 
-            if (map[newPosition.X, newPosition.Y].isSolid == false)
+            if (mapObjects[newPosition.X, newPosition.Y].isSolid == false)
             {
                 Update(newPosition);
                 if (newPosition.X == finish.X && newPosition.Y == finish.Y)

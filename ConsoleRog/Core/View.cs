@@ -14,18 +14,19 @@ namespace ConsoleRog.Core
 {
     public class View
     {
-        public GameObject[,] mapData { get; private set; }
+        private readonly MapObject[,] mapObjects;
         private int mapWidth;
         private int mapHeight;
         private Player player;
 
-        public View(GameObject[,] mapData, int mapWidth, int mapHeight, Player player)
+        public View(MapObject[,] mapObjects, int mapWidth, int mapHeight, Player player)
         {
-            this.mapData = mapData;
+            this.mapObjects = mapObjects;
             this.mapWidth = mapWidth;
             this.mapHeight = mapHeight;
             this.player = player;
             DrawMap();
+            ConsoleHelper.WriteToBufferAt(player.symbol, player.position.X, player.position.Y);
             //DrawInfoPanel();
         }
 
@@ -36,11 +37,12 @@ namespace ConsoleRog.Core
             {
                 for (int x = 0; x < mapWidth; x++)
                 {
-                    Console.Write(mapData[x, y].symbol);
+                    Console.Write(mapObjects[x, y].symbol);
                 }
                 Console.Write("\n");
             }
         }
+
         private void DrawInfoPanel()
         {
             var infoBuilder = new StringBuilder(30);

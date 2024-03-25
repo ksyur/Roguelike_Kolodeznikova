@@ -15,14 +15,14 @@ namespace ConsoleRog.MapCore
     public class Map
     {
         private int mapHeight, mapWidth;
-        public MapObject[,] mazeData { get; private set; }
+        public MapObject[,] mapObjects { get; private set; }
         public Vector2 finish { get; private set; }
 
         public Map(int _width, int _height)
         {
             mapHeight = _height;
             mapWidth = _width;
-            mazeData = new MapObject[_width, _height];
+            mapObjects = new MapObject[_width, _height];
             Initialize();
         }
 
@@ -34,23 +34,23 @@ namespace ConsoleRog.MapCore
                 {
                     if (y % 2 != 0 && x % 2 != 0 && y < mapHeight - 1 && x < mapWidth - 1) //если клетка нечетная и в пределах лабиринта
                     {
-                        mazeData[x, y] = new MapObject(" ", new Vector2(x, y), false, false);
+                        mapObjects[x, y] = new MapObject(" ", new Vector2(x, y), false, false);
                     }
                     else
                     {
-                        mazeData[x, y] = new MapObject("█", new Vector2(x, y), true, false);
+                        mapObjects[x, y] = new MapObject("█", new Vector2(x, y), true, false);
                     }
                 }
             }
-            MazeGenerator mazeGenerator = new MazeGenerator(mapWidth, mapHeight, mazeData);
-            mazeData = mazeGenerator.Generate();
-            mazeData[mapWidth - 2, mapHeight - 2] = new MapObject("#", new Vector2(mapWidth - 2, mapHeight - 2), false, false);
+            MazeGenerator mazeGenerator = new MazeGenerator(mapWidth, mapHeight, mapObjects);
+            mapObjects = mazeGenerator.Generate();
+            mapObjects[mapWidth - 2, mapHeight - 2] = new MapObject("#", new Vector2(mapWidth - 2, mapHeight - 2), false, false);
             finish = new Vector2(mapWidth - 2, mapHeight - 2);
         }
 
         public MapObject[,] GetMapData()
         {
-            return mazeData;
+            return mapObjects;
         }
     }
 }

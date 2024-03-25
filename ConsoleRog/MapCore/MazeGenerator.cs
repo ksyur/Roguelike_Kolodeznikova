@@ -12,7 +12,7 @@ namespace ConsoleRog.MapCore
     public class MazeGenerator
     {
         private Random random = Random.Shared;
-        private readonly MapObject[,] mazeData;
+        private MapObject[,] mazeData;
         private readonly int mapHeight, mapWidth;
 
         public MazeGenerator(int mapWidth, int mapHeight, MapObject[,] mazeData)

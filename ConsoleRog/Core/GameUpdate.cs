@@ -55,6 +55,7 @@ namespace ConsoleRog.Core
                 await Task.WhenAll(delay, ret);
             }
         }
+
         async Task UpdateP()
         {
             foreach (Enemy _enemyObjects in enemyObjects)

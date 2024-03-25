@@ -13,9 +13,7 @@ namespace ConsoleRog.GameObjects
     {
         public string symbol { get; set; }
         public Vector2 position { get; set; }
-
         public bool isSolid;
-        
         
         public GameObject(string _symbol, Vector2 _position, bool _isSolid)
         {
@@ -27,10 +25,6 @@ namespace ConsoleRog.GameObjects
         public virtual void DrawMyself(string _symbol, Vector2 _position)
         {
             ConsoleHelper.WriteToBufferAt(_symbol, _position.X, _position.Y);
-        }
-
-        public virtual void Update()
-        {
         }
     }
 }

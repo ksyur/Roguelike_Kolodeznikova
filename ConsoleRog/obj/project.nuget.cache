@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6fi1WPUHhK4QygmfzTOd2S96LsDBL6BfYVaiG7PV7jqsu2QDa1/WEQY+EAU6e0RXa5rsQIr8rCHU2KOmfoiFEA==",
+  "dgSpecHash": "nmfctmsUIY1HVYNQNcr0pkwf498bujAp6Twm+SZU3JuqQszIeyGcMVgaGDW5XdGYj91/cQiNyEL1wSuoOU/oPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AdMin\\OneDrive\\1 семестр\\ООП\\ConsoleRog\\ConsoleRog.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Чин-Соён\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\ConsoleRog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Чин-Соён\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Чин-Соён\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Чин-Соён\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Чин-Соён\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

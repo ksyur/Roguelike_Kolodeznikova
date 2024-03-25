@@ -12,20 +12,16 @@ namespace ConsoleRog.Core
 {
     public class GameObjectManager
     {
-        private readonly MapObject[,] map;
         private readonly int mapWidth, mapHeight;
         private Random random = Random.Shared;
-        private View gameView;
-        private readonly Vector2 finish;
+        private readonly MapObject[,] mapObjects;
         public List<Enemy> enemyObjects { get; private set; }
 
-        public GameObjectManager(MapObject[,] map, int mapWidth, int mapHeight, View gameView, Vector2 finish)
+        public GameObjectManager(int mapWidth, int mapHeight, MapObject[,] mapObjects)
         {
-            this.map = map;
             this.mapWidth = mapWidth;
             this.mapHeight = mapHeight;
-            this.gameView = gameView;
-            this.finish = finish;
+            this.mapObjects = mapObjects;
             enemyObjects = new List<Enemy>();
             CreateEntities();
         }
@@ -35,7 +31,7 @@ namespace ConsoleRog.Core
             for (int i = 0; i < 10; i++)
             {
                 Vector2 position = GetStartPosition();
-                Enemy enemy = new Enemy("Z", position, 50, gameView.mapData, mapHeight, mapWidth, finish);
+                Enemy enemy = new Enemy("Z", position, 50, mapObjects, mapHeight, mapWidth);
                 enemyObjects.Add(enemy);
             }
             //for (int i = 0; i < 5; i++)
@@ -52,7 +48,7 @@ namespace ConsoleRog.Core
             {
                 int x = random.Next(2, mapWidth);
                 int y = random.Next(2, mapHeight);
-                if (map[x, y].isSolid == false && x != finish.X && y != finish.Y)
+                if (mapObjects[x, y].isSolid == false)
                 {
                     Vector2 pos = new Vector2(x, y);
                     return pos;
@@ -60,19 +56,12 @@ namespace ConsoleRog.Core
             }
         }
 
-        public GameObject[,] GetAllObjects()
+        public List<Entity> GetAllEnemys()
         {
-            GameObject[,] objects = new GameObject[mapWidth, mapHeight];
-            for (int x = 0; x < mapWidth; x++)
-            {
-                for (int y = 0; y < mapHeight; y++)
-                {
-                    objects[x, y] = new GameObject(map[x, y].symbol, map[x, y].position, map[x, y].isSolid);
-                }
-            }
+            List<Entity> objects = new List<Entity>();
             foreach (Enemy enemy in enemyObjects)
             {
-                objects[enemy.position.X, enemy.position.Y] = new GameObject(enemy.symbol, enemy.position, enemy.isSolid);
+                objects.Add(enemy);
             }
             return objects;
         }
