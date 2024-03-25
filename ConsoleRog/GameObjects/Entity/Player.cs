@@ -1,7 +1,9 @@
-﻿using ConsoleRog.GameObjects.StaticObjects;
+﻿using ConsoleRog.Core;
+using ConsoleRog.GameObjects.StaticObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using Vector2 = ConsoleRog.Tools.Vector2;
@@ -12,10 +14,13 @@ namespace ConsoleRog.GameObjects.Entity
     {
         private readonly MapObject[,] mapObjects;
         private readonly Vector2 finish;
-        public Player(string symbol, Vector2 position, MapObject[,] mapObjects, Vector2 finish, int hp = 100, bool isSolid = true) : base(symbol, position, hp, isSolid)
+        //private readonly List<Enemy> enemyObjects;
+        private GameObjectManager gameObjectManager;
+        public Player(string symbol, Vector2 position, MapObject[,] mapObjects, Vector2 finish, GameObjectManager gameObjectManager, int hp = 100, bool isSolid = true) : base(symbol, position, hp, isSolid)
         {
             this.mapObjects = mapObjects;
             this.finish= finish;
+            this.gameObjectManager = gameObjectManager;
             DrawMyself(symbol, position);
         }
 
@@ -44,6 +49,10 @@ namespace ConsoleRog.GameObjects.Entity
                 case 4:
                     newPosition = position + Vector2.Right;
                     break;
+                case 5:
+                    Attack();
+                    newPosition = position;
+                    break;
                 default:
                     return;
             }
@@ -57,6 +66,23 @@ namespace ConsoleRog.GameObjects.Entity
                 }
             }
             
+        }
+
+        public void TakeDamage(int damage)
+        {
+            hp = hp - damage;
+            Console.WriteLine(hp);
+        }
+
+        public void Attack()
+        {
+            foreach (Enemy enemy in gameObjectManager.GetAllEnemys())
+            {
+                if (enemy.IsPlayerNext(position))
+                {
+                    enemy.TakeDamage();
+                }
+            }
         }
     }
 }

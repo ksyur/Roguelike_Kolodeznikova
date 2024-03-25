@@ -9,21 +9,7 @@ namespace ConsoleRog.GameObjects.Entity
 {
     public class Entity: GameObject
     {
-        private int hp;
-        
-        public int Hp
-        {
-            get => hp;
-            protected set
-            {
-                hp = value;
-                if (hp <= 0)
-                {
-                    Console.WriteLine("Вы сдохли");
-                }
-            }
-        }
-
+        public int hp { get; set; }
         public Entity(string symbol, Vector2 position, int hp, bool isSolid = true) : base(symbol, position, isSolid)
         {
 
@@ -34,5 +20,7 @@ namespace ConsoleRog.GameObjects.Entity
         {
             base.DrawMyself(_symbol, position);
         }
+
+        public virtual void Attack() { }
     }
 }

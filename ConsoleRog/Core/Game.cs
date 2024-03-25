@@ -16,9 +16,8 @@ namespace ConsoleRog.Core
         private GameObjectManager gameObjectManager;
         private View gameView;
         private GameUpdate gameUpdate;
-        private Player player;
         private int mapWidth, mapHeight;
-        private List<Entity> gameEntitys;
+        private List<Enemy> gameEntitys;
         public Game()
         {
             mapWidth = 35;
@@ -33,12 +32,9 @@ namespace ConsoleRog.Core
         private void RestartLevel()
         {
             gameMap = new Map(mapWidth, mapHeight);
-            player = new Player("P", new Vector2(1, 1), gameMap.GetMapData(), gameMap.finish);
-            gameObjectManager = new GameObjectManager(mapWidth, mapHeight, gameMap.GetMapData());
-            gameEntitys = gameObjectManager.GetAllEnemys();
-            gameEntitys.Add(player);
-            gameView = new View(gameMap.GetMapData(), mapWidth, mapHeight, player);
-            gameUpdate = new GameUpdate(player, gameObjectManager.enemyObjects, gameView);
+            gameObjectManager = new GameObjectManager(mapWidth, mapHeight, gameMap.GetMapData(), gameMap.finish);
+            gameView = new View(gameMap.GetMapData(), mapWidth, mapHeight, gameObjectManager.player);
+            gameUpdate = new GameUpdate(gameObjectManager, gameView);
         }
     }
 }

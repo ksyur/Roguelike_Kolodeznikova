@@ -24,20 +24,19 @@ namespace ConsoleRog.Tools
                 switch (key.Key)
                 {
                     case ConsoleKey.UpArrow:
-                        //Console.WriteLine("up");
                         player.Move(1);
                         break;
                     case ConsoleKey.DownArrow:
-                        //Console.WriteLine("down");
                         player.Move(2);
                         break;
                     case ConsoleKey.LeftArrow:
-                        //Console.WriteLine("left");
                         player.Move(3);
                         break;
                     case ConsoleKey.RightArrow:
-                        //Console.WriteLine("right");
                         player.Move(4);
+                        break;
+                    case ConsoleKey.F:  //Щит для атаки и защиты
+                        player.Move(5);
                         break;
                 }
             }

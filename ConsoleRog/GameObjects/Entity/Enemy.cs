@@ -17,28 +17,35 @@ namespace ConsoleRog.GameObjects.Entity
         private Random random = Random.Shared;
         private readonly MapObject[,] mapObjects;
         private readonly int mapHeight, mapWidth;
-        public Enemy(string symbol, Vector2 position, int hp, MapObject[,] mapObjects, int mapHeight, int mapWidth, bool isSolid = true) 
+        private int damage;
+        public Enemy(string symbol, Vector2 position, int hp, MapObject[,] mapObjects, int mapHeight, int mapWidth, bool isSolid = true, int damage = 5)
             : base(symbol, position, hp, isSolid)
         {
             this.mapObjects = mapObjects;
             this.mapHeight = mapHeight;
             this.mapWidth = mapWidth;
+            this.damage = damage;
             DrawMyself(symbol, position);
         }
 
-        public void Update(Vector2 playerPosition)
+        public void Update(Player player)
         {
-            DrawMyself(mapObjects[position.X, position.Y].symbol, position);
-            Move(playerPosition);
-            DrawMyself(symbol, position);
+            Move(player);
         }
 
-        private void Move(Vector2 playerPosition)
+        private void Move(Player player)
         {
-            bool isVisible = IsPlayerVisible(playerPosition);
+            bool isVisible = IsPlayerVisible(player.position);
             if (isVisible == true)
             {
-                MoveToPlayer(playerPosition);
+                if (IsPlayerNext(player.position))
+                {
+                    Attack(player);
+                }
+                else
+                {
+                    MoveToPlayer(player.position);
+                }
             }
             else
             {
@@ -74,6 +81,32 @@ namespace ConsoleRog.GameObjects.Entity
             position = nextPosition;
         }
 
+        public bool IsPlayerNext(Vector2 playerPosition)
+        {
+            bool isNext = false;
+            if (playerPosition.X == position.X)
+            {
+                int direction = Math.Sign(playerPosition.Y - position.Y);
+                if (playerPosition.Y - direction == position.Y)
+                {
+                    isNext = true;
+                }
+            }
+            else if (playerPosition.Y == position.Y)
+            {
+                int direction = Math.Sign(playerPosition.X - position.X);
+                if (playerPosition.X - direction == position.X)
+                {
+                    isNext = true;
+                }
+            }
+            else
+            {
+                isNext = false;
+            }
+            return isNext;
+        }
+
         private bool IsPlayerVisible(Vector2 playerPosition)
         {
             bool isVisible = true;
@@ -87,7 +120,7 @@ namespace ConsoleRog.GameObjects.Entity
                         isVisible = false;
                     }
                 }
-            } 
+            }
             else if (playerPosition.Y == position.Y)
             {
                 int direction = Math.Sign(playerPosition.X - position.X);
@@ -104,6 +137,17 @@ namespace ConsoleRog.GameObjects.Entity
                 isVisible = false;
             }
             return isVisible;
+        }
+
+        private void Attack(Player player)
+        {
+            if (hp > 0) player.TakeDamage(damage);
+        }
+
+        public void TakeDamage()
+        {
+            if (hp <= 0) DrawMyself(" ", position);
+            hp = hp - 25;
         }
     }
 }

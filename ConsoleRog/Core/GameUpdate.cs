@@ -14,14 +14,14 @@ namespace ConsoleRog.Core
         private bool gameRun = false;
         private Input input;
         private Player player;
-        private readonly List<Enemy> enemyObjects;
-        private View gameView;
+        private GameObjectManager gameObjectManager;
+        private View view;
 
-        public GameUpdate(Player player, List<Enemy> enemyObjects, View gameView)
+        public GameUpdate(GameObjectManager gameObjectManager, View view)
         {
-            this.player = player;
-            this.enemyObjects = enemyObjects;
-            this.gameView = gameView;
+            this.gameObjectManager = gameObjectManager; 
+            this.player = gameObjectManager.player;
+            this.view = view;
             Start();
         }
 
@@ -43,6 +43,7 @@ namespace ConsoleRog.Core
             while (gameRun == true)
             {
                 input.ReadInput();
+                if (player.hp <= 0 ) Stop();
             }
         }
 
@@ -50,7 +51,7 @@ namespace ConsoleRog.Core
         {
             while (gameRun == true)
             {
-                var delay = Task.Delay(800); 
+                var delay = Task.Delay(500); 
                 var ret = UpdateP();
                 await Task.WhenAll(delay, ret);
             }
@@ -58,11 +59,9 @@ namespace ConsoleRog.Core
 
         async Task UpdateP()
         {
-            foreach (Enemy _enemyObjects in enemyObjects)
-            {
-                _enemyObjects.Update(player.position);
-            }
-            //gameView.UpdateMapData(gameObjects);
+            view.RemoweEnemys(gameObjectManager.GetAllEnemys());
+            gameObjectManager.Update();
+            view.DrawEnemys(gameObjectManager.GetAllEnemys());
         }
     }
 }
