@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleRog.GameObjects.StaticObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,11 @@ namespace ConsoleRog.GameObjects.Entity
     public class Entity: GameObject
     {
         public int hp { get; set; }
-        public Entity(string symbol, Vector2 position, int hp, bool isSolid = true) : base(symbol, position, isSolid)
-        {
+        public MapObject[,] mapObjects;
 
+        public Entity(string symbol, Vector2 position, MapObject[,] mapObjects, int hp, bool isSolid = true) : base(symbol, position, isSolid)
+        {
+            this.mapObjects = mapObjects;
             this.hp = hp;
         }
 
@@ -21,6 +24,5 @@ namespace ConsoleRog.GameObjects.Entity
             base.DrawMyself(_symbol, position);
         }
 
-        public virtual void Attack() { }
     }
 }

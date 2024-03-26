@@ -10,31 +10,30 @@ using System.Threading.Tasks;
 
 namespace ConsoleRog.Core
 {
-    class Game
+    public class Game
     {
         private Map gameMap;
         private GameObjectManager gameObjectManager;
         private View gameView;
+        private InfoPanel infoPanel;
         private GameUpdate gameUpdate;
+
         private int mapWidth, mapHeight;
-        private List<Enemy> gameEntitys;
         public Game()
         {
-            mapWidth = 35;
+            mapWidth = 25;
             mapHeight = 21;
+            InitGame();
         }
 
         public void InitGame()
         {
-            RestartLevel();
+            gameMap = new Map(mapWidth, mapHeight);
+            gameObjectManager = new GameObjectManager(mapWidth, mapHeight, gameMap.mapObjects, gameMap.finish);
+            gameView = new View(gameMap.mapObjects, mapWidth, mapHeight, gameObjectManager.player);
+            infoPanel = new InfoPanel(gameObjectManager.player, mapHeight);
+            gameUpdate = new GameUpdate(gameObjectManager, gameView, this, infoPanel);
         }
 
-        private void RestartLevel()
-        {
-            gameMap = new Map(mapWidth, mapHeight);
-            gameObjectManager = new GameObjectManager(mapWidth, mapHeight, gameMap.GetMapData(), gameMap.finish);
-            gameView = new View(gameMap.GetMapData(), mapWidth, mapHeight, gameObjectManager.player);
-            gameUpdate = new GameUpdate(gameObjectManager, gameView);
-        }
     }
 }

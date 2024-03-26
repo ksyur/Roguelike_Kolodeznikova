@@ -15,7 +15,7 @@ namespace ConsoleRog.MapCore
     public class Map
     {
         private int mapHeight, mapWidth;
-        private MapObject[,] mapObjects { get; set; }
+        public MapObject[,] mapObjects { get; private set; }
         public Vector2 finish { get; private set; }
 
         public Map(int _width, int _height)
@@ -48,9 +48,5 @@ namespace ConsoleRog.MapCore
             finish = new Vector2(mapWidth - 2, mapHeight - 2);
         }
 
-        public MapObject[,] GetMapData()
-        {
-            return mapObjects;
-        }
     }
 }

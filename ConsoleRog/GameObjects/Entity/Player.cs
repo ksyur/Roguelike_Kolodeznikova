@@ -12,21 +12,20 @@ namespace ConsoleRog.GameObjects.Entity
 {
     public class Player: Entity
     {
-        private readonly MapObject[,] mapObjects;
-        private readonly Vector2 finish;
-        //private readonly List<Enemy> enemyObjects;
+        private Vector2 finish;
         private GameObjectManager gameObjectManager;
-        public Player(string symbol, Vector2 position, MapObject[,] mapObjects, Vector2 finish, GameObjectManager gameObjectManager, int hp = 100, bool isSolid = true) : base(symbol, position, hp, isSolid)
+        public bool finished {  get; private set; }
+        public Player(string symbol, Vector2 position, Vector2 finish, GameObjectManager gameObjectManager, MapObject[,] mapObjects, int hp = 100, bool isSolid = true) : 
+            base(symbol, position, mapObjects, hp, isSolid)
         {
-            this.mapObjects = mapObjects;
             this.finish= finish;
             this.gameObjectManager = gameObjectManager;
-            DrawMyself(symbol, position);
+            finished = false;
         }
 
         public void Update(Vector2 _newPosition)
         {
-            DrawMyself(mapObjects[position.X, position.Y].symbol, position);
+            DrawMyself(" ", position);
             position = _newPosition;
             DrawMyself(symbol, position);
         }
@@ -62,16 +61,21 @@ namespace ConsoleRog.GameObjects.Entity
                 Update(newPosition);
                 if (newPosition.X == finish.X && newPosition.Y == finish.Y)
                 {
-                    Console.WriteLine("end");
+                    finished = true;
                 }
             }
-            
         }
 
         public void TakeDamage(int damage)
         {
-            hp = hp - damage;
-            Console.WriteLine(hp);
+            if (hp <= 0)
+            {
+                hp = 0;
+            }
+            else
+            {
+                hp = hp - damage;
+            }
         }
 
         public void Attack()

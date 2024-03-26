@@ -35,7 +35,7 @@ namespace ConsoleRog.Tools
                     case ConsoleKey.RightArrow:
                         player.Move(4);
                         break;
-                    case ConsoleKey.F:  //Щит для атаки и защиты
+                    case ConsoleKey.F:  //атака
                         player.Move(5);
                         break;
                 }

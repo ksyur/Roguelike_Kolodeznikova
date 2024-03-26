@@ -15,34 +15,35 @@ namespace ConsoleRog.Core
 {
     public class View
     {
-        private readonly MapObject[,] mapObjects;
+        private GameObject[,] gameObjects;
         private int mapWidth, mapHeight;
         private Player player;
 
-        public View(MapObject[,] mapObjects, int mapWidth, int mapHeight, Player player)
+        public View(GameObject[,] gameObjects, int mapWidth, int mapHeight, Player player)
         {
-            this.mapObjects = mapObjects;
+            this.gameObjects = gameObjects;
             this.mapWidth = mapWidth;
             this.mapHeight = mapHeight;
             this.player = player;
             DrawMap();
-            ConsoleHelper.WriteToBufferAt(player.symbol, player.position.X, player.position.Y);
         }
 
         public void DrawMap()
         {
-            Console.SetCursorPosition(0, 0);
+            Console.Clear();
             for (int y = 0; y < mapHeight; y++)
             {
                 for (int x = 0; x < mapWidth; x++)
                 {
-                    Console.Write(mapObjects[x, y].symbol);
+                    Console.Write(gameObjects[x, y].symbol);
                 }
                 Console.Write("\n");
             }
+            Console.WriteLine("Press F for attack");
+            ConsoleHelper.WriteToBufferAt(player.symbol, player.position.X, player.position.Y);
         }
 
-        public void DrawEnemys(List<Enemy> enemyObjects)
+        public void DrawEnemys(List<Entity> enemyObjects)
         {
             foreach (Enemy enemy in enemyObjects)
             {
@@ -50,23 +51,12 @@ namespace ConsoleRog.Core
             }
         }
 
-        public void RemoweEnemys(List<Enemy> enemyObjects)
+        public void RemoweEnemys(List<Entity> enemyObjects)
         {
             foreach (Enemy enemy in enemyObjects)
             {
-                ConsoleHelper.WriteToBufferAt(mapObjects[enemy.position.X, enemy.position.Y].symbol, enemy.position.X, enemy.position.Y);
+                ConsoleHelper.WriteToBufferAt(gameObjects[enemy.position.X, enemy.position.Y].symbol, enemy.position.X, enemy.position.Y);
             }
-        }
-
-        private void DrawInfoPanel()
-        {
-            var infoBuilder = new StringBuilder(30);
-            if (player.hp > 0)
-            {
-                infoBuilder.Append($"Health: {player.hp}  Punch: Press 'E'");
-            }
-            string info = infoBuilder.ToString();
-            
         }
     }
 }

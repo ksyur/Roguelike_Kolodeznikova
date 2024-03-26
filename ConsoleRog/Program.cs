@@ -12,7 +12,6 @@ namespace ConsoleRog
         static void Main(string[] args)
         {
             Game game = new Game();
-            game.InitGame();
         }
     }
 }

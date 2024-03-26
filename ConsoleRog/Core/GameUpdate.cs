@@ -14,14 +14,19 @@ namespace ConsoleRog.Core
         private bool gameRun = false;
         private Input input;
         private Player player;
+
         private GameObjectManager gameObjectManager;
         private View view;
+        private Game game;
+        private InfoPanel infoPanel;
 
-        public GameUpdate(GameObjectManager gameObjectManager, View view)
+        public GameUpdate(GameObjectManager gameObjectManager, View view, Game game, InfoPanel infoPanel)
         {
             this.gameObjectManager = gameObjectManager; 
             this.player = gameObjectManager.player;
             this.view = view;
+            this.game = game;
+            this.infoPanel = infoPanel;
             Start();
         }
 
@@ -32,9 +37,20 @@ namespace ConsoleRog.Core
             Run();
         }
 
-        public void Stop()
+        public void Stop(int typeOfEnd)
         {
             gameRun = false;
+            switch (typeOfEnd)
+            {
+                case 1:
+                    Console.WriteLine("Вы проиграли...");
+                    break;
+                case 2:
+                    Console.WriteLine("Поздравляем! Вы прошли игру!");
+                    break;
+                default:
+                    return;
+            }
         }
 
         public void Run()
@@ -43,7 +59,11 @@ namespace ConsoleRog.Core
             while (gameRun == true)
             {
                 input.ReadInput();
-                if (player.hp <= 0 ) Stop();
+                if (player.hp <= 0 ) Stop(1);
+                else if (player.finished)
+                {
+                    Stop(2);
+                }
             }
         }
 
@@ -51,7 +71,7 @@ namespace ConsoleRog.Core
         {
             while (gameRun == true)
             {
-                var delay = Task.Delay(500); 
+                var delay = Task.Delay(1000); 
                 var ret = UpdateP();
                 await Task.WhenAll(delay, ret);
             }
@@ -62,6 +82,8 @@ namespace ConsoleRog.Core
             view.RemoweEnemys(gameObjectManager.GetAllEnemys());
             gameObjectManager.Update();
             view.DrawEnemys(gameObjectManager.GetAllEnemys());
+            //view.DrawInfoPanel();
+            infoPanel.Update();
         }
     }
 }
