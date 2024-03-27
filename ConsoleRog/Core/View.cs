@@ -15,8 +15,8 @@ namespace ConsoleRog.Core
 {
     public class View
     {
-        private GameObject[,] gameObjects;
-        private int mapWidth, mapHeight;
+        private readonly GameObject[,] gameObjects;
+        private readonly int mapWidth, mapHeight;
         private Player player;
 
         public View(GameObject[,] gameObjects, int mapWidth, int mapHeight, Player player)
@@ -28,7 +28,7 @@ namespace ConsoleRog.Core
             DrawMap();
         }
 
-        public void DrawMap()
+        private void DrawMap()
         {
             Console.Clear();
             for (int y = 0; y < mapHeight; y++)

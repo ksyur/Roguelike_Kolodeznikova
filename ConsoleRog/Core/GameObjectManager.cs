@@ -45,14 +45,14 @@ namespace ConsoleRog.Core
 
         private void CreateEntities()
         {
-            for (int i = 0; i < 35; i++)
+            for (int i = 0; i < 40; i++)
             {
-                Enemy enemy = new Enemy("Z", GetStartPosition(), mapObjects, 100, mapHeight, mapWidth);
+                Enemy enemy = new Enemy("Z", GetStartPosition(), mapObjects, 100);
                 enemyObjects.Add(enemy);
             }
-            for (int i = 0; i < 15; i++)
+            for (int i = 0; i < 10; i++)
             {
-                Shooter shooter = new Shooter("S", GetStartPosition(), mapObjects, 100, mapHeight, mapWidth);
+                Shooter shooter = new Shooter("S", GetStartPosition(), mapObjects, 100);
                 enemyObjects.Add(shooter);
             }
             player = new Player("P", new Vector2(1, 1), finish, this, mapObjects);
@@ -62,8 +62,8 @@ namespace ConsoleRog.Core
         {
             while (true)
             {
-                int x = random.Next(1, mapWidth);
-                int y = random.Next(1, mapHeight);
+                int x = random.Next(2, mapWidth);
+                int y = random.Next(2, mapHeight);
                 if (mapObjects[x, y].isSolid == false)
                 {
                     Vector2 pos = new Vector2(x, y);

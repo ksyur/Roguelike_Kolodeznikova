@@ -9,7 +9,7 @@ namespace ConsoleRog.Tools
 {
     internal class Input
     {
-        Player player;
+        private Player player;
         public Input(Player player)
         {
             this.player = player;

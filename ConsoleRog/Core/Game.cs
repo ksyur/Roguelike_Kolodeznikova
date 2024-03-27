@@ -12,12 +12,6 @@ namespace ConsoleRog.Core
 {
     public class Game
     {
-        private Map gameMap;
-        private GameObjectManager gameObjectManager;
-        private View gameView;
-        private InfoPanel infoPanel;
-        private GameUpdate gameUpdate;
-
         private int mapWidth, mapHeight;
         public Game()
         {
@@ -28,11 +22,11 @@ namespace ConsoleRog.Core
 
         public void InitGame()
         {
-            gameMap = new Map(mapWidth, mapHeight);
-            gameObjectManager = new GameObjectManager(mapWidth, mapHeight, gameMap.mapObjects, gameMap.finish);
-            gameView = new View(gameMap.mapObjects, mapWidth, mapHeight, gameObjectManager.player);
-            infoPanel = new InfoPanel(gameObjectManager.player, mapHeight);
-            gameUpdate = new GameUpdate(gameObjectManager, gameView, this, infoPanel);
+            Map gameMap = new Map(mapWidth, mapHeight);
+            GameObjectManager gameObjectManager = new GameObjectManager(mapWidth, mapHeight, gameMap.mapObjects, gameMap.finish);
+            View gameView = new View(gameMap.mapObjects, mapWidth, mapHeight, gameObjectManager.player);
+            InfoPanel infoPanel = new InfoPanel(gameObjectManager.player, mapHeight);
+            GameUpdate gameUpdate = new GameUpdate(gameObjectManager, gameView, infoPanel);
         }
 
     }

@@ -15,8 +15,8 @@ namespace ConsoleRog.GameObjects.Entity
         private Random random = Random.Shared;
         private int attackDirection;
         private int direction;
-        public Shooter(string symbol, Vector2 position, MapObject[,] mapObjects, int hp, int mapHeight, int mapWidth, bool isSolid = true)
-           : base(symbol, position, mapObjects, hp, mapHeight, mapWidth, isSolid)
+        public Shooter(string symbol, Vector2 position, MapObject[,] mapObjects, int hp, bool isSolid = true)
+           : base(symbol, position, mapObjects, hp, isSolid)
         {
             DrawMyself(symbol, position);
         }

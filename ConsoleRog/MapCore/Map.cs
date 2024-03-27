@@ -14,7 +14,7 @@ namespace ConsoleRog.MapCore
 {
     public class Map
     {
-        private int mapHeight, mapWidth;
+        private readonly int mapHeight, mapWidth;
         public MapObject[,] mapObjects { get; private set; }
         public Vector2 finish { get; private set; }
 

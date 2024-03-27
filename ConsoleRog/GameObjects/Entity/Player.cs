@@ -12,7 +12,7 @@ namespace ConsoleRog.GameObjects.Entity
 {
     public class Player: Entity
     {
-        private Vector2 finish;
+        private readonly Vector2 finish;
         private GameObjectManager gameObjectManager;
         public bool finished {  get; private set; }
         public Player(string symbol, Vector2 position, Vector2 finish, GameObjectManager gameObjectManager, MapObject[,] mapObjects, int hp = 100, bool isSolid = true) : 
@@ -68,13 +68,10 @@ namespace ConsoleRog.GameObjects.Entity
 
         public void TakeDamage(int damage)
         {
+            hp = hp - damage;
             if (hp <= 0)
             {
                 hp = 0;
-            }
-            else
-            {
-                hp = hp - damage;
             }
         }
 

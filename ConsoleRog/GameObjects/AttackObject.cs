@@ -11,13 +11,13 @@ namespace ConsoleRog.GameObjects
 {
     public class AttackObject
     {
-        public string symbol;
-        public Vector2 position;
-        public bool isSolid;
-        public int attackType;
-        private int direction;
+        private readonly int attackType;
+        private readonly int direction;
+        private Vector2 position;
+        private bool isSolid;
         private Player player;
         private readonly MapObject[,] mapObjects;
+        private string symbol;
 
         public AttackObject(int attackType, int direction, Vector2 position, bool isSolid, Player player, MapObject[,] mapObjects)
         {
@@ -89,7 +89,7 @@ namespace ConsoleRog.GameObjects
             else if (_position.Y == player.position.Y && _position.X == player.position.X)
             {
                 isSolid = false;
-                player.TakeDamage(3);
+                player.TakeDamage(5);
                 return false;
             }
             else

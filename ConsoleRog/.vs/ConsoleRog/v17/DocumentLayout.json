@@ -3,56 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\gameobjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\gameobjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\tools\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:tools\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\mapcore\\mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:mapcore\\mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\tools\\consolehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:tools\\consolehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\mapcore\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:mapcore\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\attackobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\attackobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\staticobjects\\mapobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\staticobjects\\mapobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\entity\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\entity\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\entity\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\entity\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\gameupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\gameupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\infopanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\infopanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\entity\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\entity\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\attackobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\attackobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\entity\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\entity\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\gameupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\gameupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\entity\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\entity\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\gameobjects\\entity\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:gameobjects\\entity\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|c:\\users\\\u0447\u0438\u043D-\u0441\u043E\u0451\u043D\\documents\\github\\roguelike_kolodeznikova\\consolerog\\core\\gameobjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01349684-912D-447A-BB67-495695677DEC}|ConsoleRog.csproj|solutionrelative:core\\gameobjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,95 +58,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MazeGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\MapCore\\MazeGenerator.cs",
-              "RelativeDocumentMoniker": "MapCore\\MazeGenerator.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\MapCore\\MazeGenerator.cs",
-              "RelativeToolTip": "MapCore\\MazeGenerator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Input.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Tools\\Input.cs",
+              "RelativeDocumentMoniker": "Tools\\Input.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Tools\\Input.cs",
+              "RelativeToolTip": "Tools\\Input.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T03:35:27.55Z",
+              "WhenOpened": "2024-03-27T04:27:05.665Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Enemy.cs",
-              "RelativeDocumentMoniker": "GameObjects\\Entity\\Enemy.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Enemy.cs",
-              "RelativeToolTip": "GameObjects\\Entity\\Enemy.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAIEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T10:27:40.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Entity.cs",
-              "RelativeDocumentMoniker": "GameObjects\\Entity\\Entity.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Entity.cs",
-              "RelativeToolTip": "GameObjects\\Entity\\Entity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T10:27:38.65Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\Game.cs",
-              "RelativeDocumentMoniker": "Core\\Game.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\Game.cs",
-              "RelativeToolTip": "Core\\Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAYAAAA",
+              "Title": "ConsoleHelper.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Tools\\ConsoleHelper.cs",
+              "RelativeDocumentMoniker": "Tools\\ConsoleHelper.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Tools\\ConsoleHelper.cs",
+              "RelativeToolTip": "Tools\\ConsoleHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T07:26:21.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T08:41:38.579Z",
+              "WhenOpened": "2024-03-27T04:26:53.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Map.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\MapCore\\Map.cs",
-              "RelativeDocumentMoniker": "MapCore\\Map.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\MapCore\\Map.cs",
-              "RelativeToolTip": "MapCore\\Map.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Title": "AttackObject.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\AttackObject.cs",
+              "RelativeDocumentMoniker": "GameObjects\\AttackObject.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\AttackObject.cs",
+              "RelativeToolTip": "GameObjects\\AttackObject.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwGQAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T10:12:41.252Z",
+              "WhenOpened": "2024-03-27T04:23:11.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameObjectManager.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\GameObjectManager.cs",
-              "RelativeDocumentMoniker": "Core\\GameObjectManager.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\GameObjectManager.cs",
-              "RelativeToolTip": "Core\\GameObjectManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAJAAAA",
+              "DocumentIndex": 4,
+              "Title": "MapObject.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\StaticObjects\\MapObject.cs",
+              "RelativeDocumentMoniker": "GameObjects\\StaticObjects\\MapObject.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\StaticObjects\\MapObject.cs",
+              "RelativeToolTip": "GameObjects\\StaticObjects\\MapObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T07:26:23.907Z",
+              "WhenOpened": "2024-03-27T04:23:08.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Shooter.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Shooter.cs",
+              "RelativeDocumentMoniker": "GameObjects\\Entity\\Shooter.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Shooter.cs",
+              "RelativeToolTip": "GameObjects\\Entity\\Shooter.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T04:23:01.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Player.cs",
+              "RelativeDocumentMoniker": "GameObjects\\Entity\\Player.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Player.cs",
+              "RelativeToolTip": "GameObjects\\Entity\\Player.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAkwBUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T04:22:42.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Enemy.cs",
+              "RelativeDocumentMoniker": "GameObjects\\Entity\\Enemy.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Enemy.cs",
+              "RelativeToolTip": "GameObjects\\Entity\\Enemy.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAwwB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T04:21:55.99Z",
               "EditorCaption": ""
             },
             {
@@ -161,69 +159,62 @@
               "RelativeDocumentMoniker": "Core\\View.cs",
               "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\View.cs",
               "RelativeToolTip": "Core\\View.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwB4AAAAdAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T08:34:26.62Z"
+              "WhenOpened": "2024-03-27T04:21:22.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "GameUpdate.cs",
               "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\GameUpdate.cs",
               "RelativeDocumentMoniker": "Core\\GameUpdate.cs",
               "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\GameUpdate.cs",
               "RelativeToolTip": "Core\\GameUpdate.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwDIAAAAYAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T07:26:30.135Z"
+              "WhenOpened": "2024-03-27T04:20:29.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Player.cs",
-              "RelativeDocumentMoniker": "GameObjects\\Entity\\Player.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Player.cs",
-              "RelativeToolTip": "GameObjects\\Entity\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "GameObjectManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\GameObjectManager.cs",
+              "RelativeDocumentMoniker": "Core\\GameObjectManager.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\GameObjectManager.cs",
+              "RelativeToolTip": "Core\\GameObjectManager.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T10:33:11.738Z"
+              "WhenOpened": "2024-03-27T04:18:48.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InfoPanel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\InfoPanel.cs",
-              "RelativeDocumentMoniker": "Core\\InfoPanel.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\InfoPanel.cs",
-              "RelativeToolTip": "Core\\InfoPanel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAvAAAA",
+              "DocumentIndex": 2,
+              "Title": "Map.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\MapCore\\Map.cs",
+              "RelativeDocumentMoniker": "MapCore\\Map.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\MapCore\\Map.cs",
+              "RelativeToolTip": "MapCore\\Map.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T10:42:52.507Z"
+              "WhenOpened": "2024-03-27T04:19:39.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "AttackObject.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\AttackObject.cs",
-              "RelativeDocumentMoniker": "GameObjects\\AttackObject.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\AttackObject.cs",
-              "RelativeToolTip": "GameObjects\\AttackObject.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAFkAAAANAAAA",
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\Game.cs",
+              "RelativeDocumentMoniker": "Core\\Game.cs",
+              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\Core\\Game.cs",
+              "RelativeToolTip": "Core\\Game.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T10:36:51.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Shooter.cs",
-              "DocumentMoniker": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Shooter.cs",
-              "RelativeDocumentMoniker": "GameObjects\\Entity\\Shooter.cs",
-              "ToolTip": "C:\\Users\\\u0427\u0438\u043D-\u0421\u043E\u0451\u043D\\Documents\\GitHub\\Roguelike_Kolodeznikova\\ConsoleRog\\GameObjects\\Entity\\Shooter.cs",
-              "RelativeToolTip": "GameObjects\\Entity\\Shooter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T10:30:43.576Z"
+              "WhenOpened": "2024-03-27T04:18:48.536Z",
+              "EditorCaption": ""
             }
           ]
         }

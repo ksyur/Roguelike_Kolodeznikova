@@ -36,7 +36,7 @@ namespace ConsoleRog.Core
         private void ClearPrint(string msg)
         {
             Console.SetCursorPosition(0, mapHeight);
-            Console.WriteLine($"\r{msg}{new String(' ', Console.BufferWidth - msg.Length + 10)}");
+            Console.WriteLine($"\r{msg}{new String(' ', Console.BufferWidth - msg.Length)}");
         }
     }
 }

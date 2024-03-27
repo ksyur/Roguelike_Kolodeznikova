@@ -16,13 +16,10 @@ namespace ConsoleRog.GameObjects.Entity
     public class Enemy : Entity
     {
         private Random random = Random.Shared;
-        private int mapHeight, mapWidth;
         private int damage;
-        public Enemy(string symbol, Vector2 position, MapObject[,] mapObjects, int hp, int mapHeight, int mapWidth, bool isSolid = true, int damage = 5)
+        public Enemy(string symbol, Vector2 position, MapObject[,] mapObjects, int hp, bool isSolid = true, int damage = 10)
             : base(symbol, position, mapObjects, hp, isSolid)
         {
-            this.mapHeight = mapHeight;
-            this.mapWidth = mapWidth;
             this.damage = damage;
             DrawMyself(symbol, position);
         }
@@ -32,7 +29,7 @@ namespace ConsoleRog.GameObjects.Entity
             Move(player);
         }
 
-        public void Move(Player player)
+        private void Move(Player player)
         {
             if (IsPlayerVisible(player.position))
             {
