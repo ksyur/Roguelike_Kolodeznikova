@@ -21,8 +21,8 @@ namespace ConsoleRog.Core
         private int mapWidth, mapHeight;
         public Game()
         {
-            mapWidth = 25;
-            mapHeight = 21;
+            mapWidth = 65;
+            mapHeight = 25;
             InitGame();
         }
 

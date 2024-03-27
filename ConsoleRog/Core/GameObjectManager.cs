@@ -16,7 +16,7 @@ namespace ConsoleRog.Core
         private Random random = Random.Shared;
         private readonly int mapWidth, mapHeight;
         private readonly MapObject[,] mapObjects;
-        private Vector2 finish;
+        private readonly Vector2 finish;
 
         public Player player { get; private set; }
         public List<Entity> enemyObjects { get; private set; }
@@ -45,12 +45,12 @@ namespace ConsoleRog.Core
 
         private void CreateEntities()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 35; i++)
             {
                 Enemy enemy = new Enemy("Z", GetStartPosition(), mapObjects, 100, mapHeight, mapWidth);
                 enemyObjects.Add(enemy);
             }
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 15; i++)
             {
                 Shooter shooter = new Shooter("S", GetStartPosition(), mapObjects, 100, mapHeight, mapWidth);
                 enemyObjects.Add(shooter);
